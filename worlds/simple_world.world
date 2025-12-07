@@ -127,26 +127,6 @@
     </model>
 
     <!-- Large obstacle 2 (blue box) -->
-    <model name="obstacle_2">
-      <pose>-2 2 0.5 0 0 0.5</pose>
-      <static>true</static>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box><size>1.5 0.8 1</size></box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box><size>1.5 0.8 1</size></box>
-          </geometry>
-          <material>
-            <ambient>0.1 0.1 0.8 1</ambient>
-            <diffuse>0.2 0.2 1 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
 
     <!-- Cylindrical obstacle (yellow) -->
     <model name="obstacle_3">
@@ -214,47 +194,7 @@
     </model>
 
     <!-- Small obstacles for complexity -->
-    <model name="small_obstacle_1">
-      <pose>-3 -1 0.2 0 0 0</pose>
-      <static>true</static>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box><size>0.4 0.4 0.4</size></box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box><size>0.4 0.4 0.4</size></box>
-          </geometry>
-          <material>
-            <ambient>0.6 0.3 0.1 1</ambient>
-            <diffuse>0.8 0.5 0.2 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="small_obstacle_2">
-      <pose>1 -3.5 0.2 0 0 0</pose>
-      <static>true</static>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box><size>0.5 0.5 0.4</size></box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box><size>0.5 0.5 0.4</size></box>
-          </geometry>
-          <material>
-            <ambient>0.5 0.2 0.5 1</ambient>
-            <diffuse>0.7 0.3 0.7 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
 
     <!-- Target zone (bright green cylinder) - Goal for robot -->
     <model name="target_zone">
@@ -280,6 +220,32 @@
     </model>
 
     <!-- Checkpoint marker (orange sphere) -->
+    <!-- Obstacle blocking goal -->
+
+    <!-- Obstacle near goal -->
+
+    <!-- Purple obstacle in path -->
+    <model name="small_obstacle_2">
+      <pose>-3.5 0.5 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1.2 1.2 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1.2 1.2 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.2 0.5 1</ambient>
+            <diffuse>0.7 0.3 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
     <model name="checkpoint">
       <pose>0 -1 0.3 0 0 0</pose>
       <static>true</static>
